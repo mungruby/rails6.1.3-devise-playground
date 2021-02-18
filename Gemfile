@@ -25,10 +25,14 @@ gem 'turbolinks', '5.2.1'
 gem 'jbuilder', '2.11.2'
 
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '3.1.16'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '1.7.2', require: false
+
+# Use Warden and Devise for Authentication
+gem 'warden', '1.2.9'
+gem 'devise', '4.7.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
